@@ -1,0 +1,50 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.animation-container {
+    position: relative;
+}
+
+.screen {
+    border: 2px solid #000;
+    height: 300px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease-in-out; /* Анимация для изменения размера и цвета */
+    opacity: 1; /* Изначально форма видима */
+    background-color: green; /* Изначально круг */
+    border-radius: 50%; /* Изначально круг */
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blue; /* Квадрат */
+    border-radius: 0%; /* Убираем скругленные углы */
+}
+
+.diamond {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 0;
+    border-top: 100px solid orange; /* Ромб */
+    border-radius: 0%; /* Убираем скругленные углы */
+}
